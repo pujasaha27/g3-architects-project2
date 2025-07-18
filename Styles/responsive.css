@@ -6,11 +6,25 @@
     .teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container,
+    .facts-container,
+    .sponsor-company{
         grid-template-columns: repeat(1, 1fr);
     }
     .features{
         margin-left: 20px;
+    }
+    .facts,
+    .fact-description{
+        margin-left: 30px;
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 20px;
+    }
+    .sponsor-company{
+        justify-items: center;
+        gap: 50px;
     }
 }
 
@@ -23,4 +37,15 @@
     .features{
         margin: 50px auto;
     }
+    .facts,
+    .fact-description{
+        margin-left: 50px;
+    }
+    .sponsor-company,
+    .facts-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+    
 }
